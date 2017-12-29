@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using SIMMInvitation.Infrastructure.DbModels;
+@using SyntacticSugar;
+@using SIMMInvitation.Infrastructure.ViewModels;
+
+@section head{    
+    <script src="@PathHelper.vRoot/Scripts/Invit.js"></script>
+}    
+<div class="box">
+    <img src="@PathHelper.vRoot/Content/images/Int.png" class="img" />
+    <form method="post" id="frmLogin">
+        <input type="text" placeholder="参展公司名称" class="ipt" id="AtrName" name="AtrName"/>
+        <input type="text" placeholder="展位号" class="ipt" id="BthCode" name="BthCode"/>
+        <input type="button" value="确认生成" class="btn" id="btnLogin" onclick="LoginSubmit();"/>
+    </form>
+</div>
+
+

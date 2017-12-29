@@ -1,0 +1,45 @@
+﻿.stand {
+    width: 60%;
+    background: #FFFFFF;
+    height: 60px;
+    margin: 30px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: #b1b1b1;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.products_Container {
+    width: 80%;
+    margin: 30px auto;
+    font-size: 1.4rem;
+}
+
+.products_Container h2 {
+    font-size: 1.4rem;
+}
+
+.products_Container {
+    line-height: 22px;
+}
+
+.products_Container a {
+    cursor: pointer;
+    color: #B21B60;
+    font-weight: bold;
+}
+
+.products {
+    line-height: 22px;
+}
+
+.products a {
+    cursor: pointer;
+    color: #B21B60;
+    font-weight: bold;
+}

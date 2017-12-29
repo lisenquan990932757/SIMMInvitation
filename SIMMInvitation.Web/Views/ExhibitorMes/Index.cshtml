@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using SIMMInvitation.Infrastructure.DbModels;
+@using SyntacticSugar
+@using SIMMInvitation.Infrastructure.ViewModels;
+
+@section head{
+    <link href="@PathHelper.vRoot/Content/Css/ExhMes.css" rel="stylesheet" />
+    <script src="@PathHelper.vRoot/Scripts/ExhIndex.js"></script>
+}
+
+<div class="box">
+    <h2 class="h2">@Request["AtrName"]</h2>
+    <p class="p1">
+        尊敬的嘉宾：<br />
+        我司诚挚的邀请您参加2018年3月29日-4月1日于深圳会展中心举办的“第十九届深圳国际机械制造工业展览会（SIMM）”，欢迎您莅临现场！
+    </p>
+    <form action="">
+        <input type="text" placeholder="展位号" class="ipt" readonly="readonly" value=@ViewData["BthCode"] />
+        <input type="button" value="立即预登记" class="btn" id="RegisterNow" onclick="CheckIn('@Request["AtrName"]');"/>
+    </form>
+    <div class="p1">
+        <h3>主营产品</h3>
+        @ViewData["ClgPdtIntro"]  
+    </div>
+</div>
+

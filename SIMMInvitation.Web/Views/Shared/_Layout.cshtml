@@ -1,0 +1,23 @@
+﻿@using SIMMInvitation.Infrastructure.ViewModels;
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>@PathHelper.MTitle</title>
+    <script src="@PathHelper.vRoot/Scripts/jquery-1.11.1.js"></script>
+    <script src="@PathHelper.vRoot/Scripts/ejq.js"></script>    
+    <script src="@PathHelper.vRoot/Scripts/InvIndexCommon.js"></script>
+    <script src="@PathHelper.vRoot/Scripts/iTips.min.js"></script>    
+    @*<link href="/SIMMInvitation/Content/Css/home.css" rel="stylesheet" />*@
+    <link href="@PathHelper.vRoot/Content/Css/indexCommon.css" rel="stylesheet" />
+    @RenderSection("head", false)
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>@ViewBag.Title</h1>
+    </div>
+    @RenderBody()
+</body>
+</html>

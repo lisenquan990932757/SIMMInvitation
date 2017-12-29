@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script>   
+			(function (doc, win) {
+			        var docEl = doc.documentElement,
+			            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			            recalc = function () {
+			                var clientWidth = docEl.clientWidth;
+			                if (!clientWidth) return;
+			                if(clientWidth>=640){
+			                    docEl.style.fontSize = '100px';
+			                }else{
+			                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			                }
+			            };
+			
+			        if (!doc.addEventListener) return;
+			        win.addEventListener(resizeEvt, recalc, false);
+			        doc.addEventListener('DOMContentLoaded', recalc, false);
+			    })(document, window);
+	</script> 
+</head>
+<body>
+	
+	<div class="box">
+		<img src="img/Int.png"  class="img"/>
+		
+		<form action="" method="">
+			<input type="text" placeholder="展位公司名称" class="ipt"/>
+			<input type="text" placeholder="展位号" class="ipt"/>
+			<input type="button" value="确认生成"  class="btn"/>
+		</form>
+		
+	</div>
+	
+	
+</body>
+</html>

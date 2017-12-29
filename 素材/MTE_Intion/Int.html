@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script>   
+			(function (doc, win) {
+			        var docEl = doc.documentElement,
+			            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			            recalc = function () {
+			                var clientWidth = docEl.clientWidth;
+			                if (!clientWidth) return;
+			                if(clientWidth>=640){
+			                    docEl.style.fontSize = '100px';
+			                }else{
+			                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			                }
+			            };
+			
+			        if (!doc.addEventListener) return;
+			        win.addEventListener(resizeEvt, recalc, false);
+			        doc.addEventListener('DOMContentLoaded', recalc, false);
+			    })(document, window);
+	</script> 
+</head>
+<body>
+	
+	<div class="box">
+		<h2 class="h2">XXXX</h2>
+		<p class="p1">
+			尊敬的嘉宾：<br />
+我司诚挚的邀请您参加2018年3月29日-4月1日于深圳会展中心举办的“第十九届深圳国际机械制造工业展览会（SIMM）”，欢迎您莅临现场！
+		</p>
+		
+		<form action="" method="">
+			<input type="text" placeholder="展位号" class="ipt"/>
+			<input type="button" value="确认生成"  class="btn"/>
+		</form>
+		
+	</div>
+	
+	
+</body>
+</html>
